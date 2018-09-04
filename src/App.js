@@ -8,6 +8,7 @@ import { getMeals } from './api.js'
 const showMeals = meals => meals.map(m => <Meal key={m.id} meal={m} />)
 const filterByType = (meals, type) => meals.filter(meal => meal.type === `${type}`)
 const sortByPrice = meals => meals.sort((a, b) => a.price - b.price)
+
 class App extends Component {
   state = {
     meals: [],
@@ -15,17 +16,12 @@ class App extends Component {
     status: 'getAll'
   }
 
-  changeStatus = newStatus => {
-    return this.setState({ status: `${newStatus}` })
-  }
+  changeStatus = newStatus => this.setState({ status: `${newStatus}` })
 
   constructor () {
     super()
 
-    getMeals()
-      .then(meals => {
-        this.setState({ meals: meals })
-      })
+    getMeals().then(meals => this.setState({ meals: meals, toBeSort: meals }))
   }
 
   getAppetizer () {
