@@ -75,7 +75,7 @@ class App extends Component {
           <Table celled striped>
             <Table.Header>
               <Table.Row>
-                <Table.HeaderCell colSpan='3' style={{ fontFamily: 'Nothing You Could Do, cursive', fontSize: '24px', height: '50px', paddingBottom: '20px' }}>
+                <Table.HeaderCell colSpan='3'>
                   A déguster...
                 </Table.HeaderCell>
               </Table.Row>
