@@ -3,6 +3,8 @@ import { Container, Table } from 'semantic-ui-react'
 import './App.css'
 import Meal from './components/Meal.js'
 import Header from './components/Header.js'
+import { getMeals } from './api.js'
+
 
 class App extends Component {
   state = {
@@ -12,8 +14,7 @@ class App extends Component {
   constructor () {
     super()
 
-    fetch('http://localhost:4000/meals/1')
-      .then(res => res.json())
+    getMeals()
       .then(meals => {
         this.setState({ meals: meals })
       })
