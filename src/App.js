@@ -28,17 +28,15 @@ class App extends Component {
 
   getAppetizer () {
     return <Table.Body>
-      {this.state.meals
-        .filter(m => m.type === 'Entrée')
-        .map(m => <Meal key={m.id} meal={m} />)}
+      {showMeals(filterByType(this.state.meals, 'Entrée'))}
     </Table.Body>
   }
 
   getMainMeals () {
     return <Table.Body>
-      {this.state.meals
-        .filter(m => m.type === 'Plat')
-        .map(m => <Meal key={m.id} meal={m} />)}
+      {showMeals(filterByType(this.state.meals, 'Plat'))}
+    </Table.Body>
+  }
     </Table.Body>
   }
 
