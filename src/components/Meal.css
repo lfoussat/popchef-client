@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Nothing+You+Could+Do')
+
+  .text p {
+  font-family: 'Montserrat', sans-serif;
+  padding: 15px;
+}
