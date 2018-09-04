@@ -43,7 +43,7 @@ class App extends Component {
 
   getAll () {
     return <Table.Body>
-      {this.state.meals.map(m => <Meal key={m.id} meal={m} />)}
+      {showMeals(this.state.meals)}
     </Table.Body>
   }
 
