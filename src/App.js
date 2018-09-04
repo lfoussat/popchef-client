@@ -11,6 +11,7 @@ const sortByPrice = meals => meals.sort((a, b) => a.price - b.price)
 class App extends Component {
   state = {
     meals: [],
+    toBeSort: [],
     status: 'getAll'
   }
 
@@ -38,6 +39,10 @@ class App extends Component {
       {showMeals(filterByType(this.state.meals, 'Plat'))}
     </Table.Body>
   }
+
+  getByPrice () {
+    return <Table.Body>
+      {showMeals(sortByPrice(this.state.toBeSort))}
     </Table.Body>
   }
 
