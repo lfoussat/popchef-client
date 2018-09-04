@@ -22,6 +22,11 @@
   font-size: large;
 }
 
+h2 {
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 3vw;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
