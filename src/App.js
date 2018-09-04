@@ -6,6 +6,7 @@ import Header from './components/Header.js'
 import { getMeals } from './api.js'
 
 const showMeals = meals => meals.map(m => <Meal key={m.id} meal={m} />)
+const filterByType = (meals, type) => meals.filter(meal => meal.type === `${type}`)
 class App extends Component {
   state = {
     meals: [],
