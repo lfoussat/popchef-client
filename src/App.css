@@ -27,6 +27,17 @@ h2 {
   font-size: 3vw;
 }
 
+button {
+  background-color: #E2AF3C;
+  border-radius: 3px;
+  color: white;
+  font-weight: 400;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  margin: 5px;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
