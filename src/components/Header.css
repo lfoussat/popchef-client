@@ -1,21 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Nothing+You+Could+Do')
 
-.item::before {
+  .item::before {
   display: none;
 }
 
 .ui.menu {
   background-color: rgb(86, 192, 145);
   border-radius: 0;
-  box-shadow: 0px 1px 2px #00000047;
+  box-shadow: 0 1px 2px #00000047;
 }
 
-.ui.menu .item:before {
-	width: 0px;
+.ui.menu .item::before {
+  width: 0;
 }
 
-.ui.celled.table tr td:first-child, .ui.celled.table tr th:first-child {
-	width: 25%;
+.ui.celled.table tr td:first-child,
+.ui.celled.table tr th:first-child {
+  width: 25%;
 }
 
 h1 {

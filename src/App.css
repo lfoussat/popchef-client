@@ -27,19 +27,19 @@ h2 {
   font-size: 28px;
 }
 
-.ui.table thead tr:first-child>th:only-child {
-    border-radius: none;
-    font-family: "Nothing You Could Do", cursive;
-    font-size: 24px;
-    height: 50px;
-    padding-bottom: 20px;
+.ui.table thead tr:first-child > th:only-child {
+  border-radius: none;
+  font-family: "Nothing You Could Do", cursive;
+  font-size: 24px;
+  height: 50px;
+  padding-bottom: 20px;
 }
 
 @media only screen and (max-width: 767px) {
   .ui.container {
-    width: auto!important;
-    margin-left: 0px !important; 
-    margin-right: 0px !important; 
+    width: auto !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 }
 

@@ -63,7 +63,7 @@ class App extends Component {
             onClick={() => {
               this.changeStatus('getMainMeals')
               this.setState({ toBeSort: filterByType(this.state.meals, 'Plat') })
-          }}>Plats</Button>
+            }}>Plats</Button>
           <Button
             color='yellow'
             onClick={() => this.changeStatus('getByPrice')}
