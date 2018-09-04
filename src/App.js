@@ -5,7 +5,6 @@ import Meal from './components/Meal.js'
 import Header from './components/Header.js'
 import { getMeals } from './api.js'
 
-
 class App extends Component {
   state = {
     meals: [],
@@ -27,24 +26,24 @@ class App extends Component {
 
   getAppetizer () {
     return <Table.Body>
-        {this.state.meals
-          .filter(m => m.type === 'Entrée')
-          .map(m => <Meal key={m.id} meal={m} />)}
-      </Table.Body>
+      {this.state.meals
+        .filter(m => m.type === 'Entrée')
+        .map(m => <Meal key={m.id} meal={m} />)}
+    </Table.Body>
   }
 
   getMainMeals () {
     return <Table.Body>
-        {this.state.meals
-          .filter(m => m.type === 'Plat')
-          .map(m => <Meal key={m.id} meal={m} />)}
-      </Table.Body>
+      {this.state.meals
+        .filter(m => m.type === 'Plat')
+        .map(m => <Meal key={m.id} meal={m} />)}
+    </Table.Body>
   }
 
-  getAll() {
+  getAll () {
     return <Table.Body>
-        {this.state.meals.map(m => <Meal key={m.id} meal={m} />)}
-      </Table.Body>
+      {this.state.meals.map(m => <Meal key={m.id} meal={m} />)}
+    </Table.Body>
   }
 
   render () {
