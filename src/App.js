@@ -8,7 +8,9 @@ import { getMeals } from './api.js'
 
 class App extends Component {
   state = {
-    meals: []
+    meals: [],
+    status: 'getAll'
+  }
   }
 
   constructor () {
@@ -18,6 +20,28 @@ class App extends Component {
       .then(meals => {
         this.setState({ meals: meals })
       })
+  }
+
+  getAppetizer () {
+    return <Table.Body>
+        {this.state.meals
+          .filter(m => m.type === 'Entrée')
+          .map(m => <Meal key={m.id} meal={m} />)}
+      </Table.Body>
+  }
+
+  getMainMeals () {
+    return <Table.Body>
+        {this.state.meals
+          .filter(m => m.type === 'Plat')
+          .map(m => <Meal key={m.id} meal={m} />)}
+      </Table.Body>
+  }
+
+  getAll() {
+    return <Table.Body>
+        {this.state.meals.map(m => <Meal key={m.id} meal={m} />)}
+      </Table.Body>
   }
 
   render () {
@@ -34,9 +58,7 @@ class App extends Component {
                 </Table.HeaderCell>
               </Table.Row>
             </Table.Header>
-            <Table.Body>
-              {this.state.meals.map(m => <Meal key={m.id} meal={m} />)}
-            </Table.Body>
+            {this[this.state.status]()}
           </Table>
         </Container>
       </div>
