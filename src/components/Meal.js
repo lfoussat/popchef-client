@@ -7,17 +7,20 @@ const Meal = ({ meal }) => {
 
   return (
     <Table.Row>
-      <Table.Cell collapsing textAlign='right'>
-        <img src={image} alt={title} style={{ maxWidth: '100%' }} />
+      <Table.Cell collapsing textAlign='center'>
+        <img src={image} alt={title} />
       </Table.Cell>
-      <Table.Cell textAlign='left' style={{ padding: '15px' }}>
-        <div style={{ fontFamily: 'Montserrat, sans-serif' }}>
-          <p style={{ fontFamily: 'Nothing You Could Do, cursive', fontSize: '18px' }}>{title}</p>
-          <p style={{ fontSize: '14px' }}>{description}</p>
-          <p><Icon name='fire'/>Se mange {temperature}</p>
+      <Table.Cell textAlign='left'>
+        <div>
+          <p>{title}</p>
+          <p>{description}</p>
+          <p>
+            <Icon name={temperature === 'Froid' ? 'snowflake' : 'fire'} />
+            Se mange {temperature}
+          </p>
         </div>
       </Table.Cell>
-      <Table.Cell collapsing><p style={{ fontFamily: 'Nothing You Could Do, cursive', fontSize: '18px', padding: '15px' }}>{price}€</p></Table.Cell>
+      <Table.Cell collapsing><p>{price} €</p></Table.Cell>
     </Table.Row>
   )
 }
