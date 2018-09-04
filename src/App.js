@@ -5,6 +5,7 @@ import Meal from './components/Meal.js'
 import Header from './components/Header.js'
 import { getMeals } from './api.js'
 
+const showMeals = meals => meals.map(m => <Meal key={m.id} meal={m} />)
 class App extends Component {
   state = {
     meals: [],
