@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Container, Table, Button } from 'semantic-ui-react'
+import { Container, Table } from 'semantic-ui-react'
 import './App.css'
 import Meal from './components/Meal.js'
 import Header from './components/Header.js'
@@ -52,9 +52,9 @@ class App extends Component {
         <Container fluid>
           <Header />
           <h2>La carte</h2>
-          <Button color='teal' onClick={() => this.changeStatus('getAppetizer')}>Entrées</Button>
-          <Button color='teal' onClick={() => this.changeStatus('getMainMeals')}>Plats</Button>
-          <Button color='yellow' onClick={() => this.changeStatus('getAll')}>Tout</Button>
+          <button onClick={() => this.changeStatus('getAppetizer')}>Entrées</button>
+          <button onClick={() => this.changeStatus('getMainMeals')}>Plats</button>
+          <button onClick={() => this.changeStatus('getAll')}>Tout</button>
           <Table celled striped>
             <Table.Header>
               <Table.Row>
