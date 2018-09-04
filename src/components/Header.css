@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Nothing+You+Could+Do')
+
+  .item::before {
+  display: none;
+}
+
+.ui.menu {
+  background-color: rgb(86, 192, 145);
+  border-radius: 0;
+}
+
+h1 {
+  font-family: 'Nothing You Could Do', cursive;
+  color: #fff;
+  margin-top: 0;
+}
