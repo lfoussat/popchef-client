@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
 import Meal from './components/Meal.js'
+import Header from './components/Header.js'
 
 class App extends Component {
   state = {
@@ -26,6 +27,7 @@ class App extends Component {
             {this.state.meals.map(m => <Meal key={m.id} meal={m} />)}
           </tbody>
         </table>
+          <Header />
       </div>
     )
   }
