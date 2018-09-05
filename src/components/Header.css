@@ -19,6 +19,11 @@
   width: 25%;
 }
 
+.ui.menu .item > a:not(.ui) {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
 h1 {
   font-family: 'Nothing You Could Do', cursive;
   color: #fff;
