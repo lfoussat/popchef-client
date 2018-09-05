@@ -17,7 +17,7 @@
     "lint:fix": "eslint --fix . && stylelint --fix 'src/**/*.css'",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy" "git push heroku master",
+    "deploy": "git push heroku master",
     "test": "echo 'no tests'",
     "eject": "react-scripts eject"
   },
