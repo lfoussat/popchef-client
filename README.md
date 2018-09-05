@@ -2,6 +2,7 @@
 The frontend for our popchef app
 
 ![Home](https://user-images.githubusercontent.com/35296671/45084485-bcc4dc80-b0fe-11e8-9af4-323b21a09d0b.png)
+![Meals](https://user-images.githubusercontent.com/35296671/45084626-11685780-b0ff-11e8-84b5-e0b48c468cad.png)
 
 Developped with Node.js / React
 
