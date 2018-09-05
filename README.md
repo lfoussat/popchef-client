@@ -1,4 +1,4 @@
-# 🍓🥐 popchef-server 🍋🥕
+# 🍓🥐 popchef-client 🍋🥕
 The frontend for our popchef app
 
 Developped with Node.js / React
